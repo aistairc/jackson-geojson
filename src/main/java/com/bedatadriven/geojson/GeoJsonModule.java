@@ -3,7 +3,7 @@ package com.bedatadriven.geojson;
 
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.vividsolutions.jts.geom.Geometry;
+import org.locationtech.jts.geom.Geometry;
 
 public class GeoJsonModule extends SimpleModule {
 

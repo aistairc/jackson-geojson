@@ -23,7 +23,7 @@ public class GeometryDeserializer extends JsonDeserializer<Geometry> {
 		return parseGeometry(root);
 	}
 
-	private Geometry parseGeometry(JsonNode root) {
+	public Geometry parseGeometry(JsonNode root) {
 		String typeName = root.get("type").asText();
 		if (typeName.equals("Point")) {
 			return gf.createPoint(parseCoordinate(root
